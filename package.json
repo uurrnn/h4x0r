@@ -1,0 +1,15 @@
+{
+  "name": "h4x2",
+  "version": "1.0.0",
+  "description": "githuib game off",
+  "main": "index.html",
+  "repository": {
+    "url": "https://github.com/uurrnn/h4x0r.git",
+    "type": "git"
+  },
+  "author": "uurrnn <uurrnn@gmail.com>",
+  "license": "GPL",
+  "dependencies": {
+    "phaser": "^2.6.2"
+  }
+}
