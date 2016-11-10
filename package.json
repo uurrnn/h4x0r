@@ -1,14 +1,13 @@
 {
-  "name": "h4x2",
-  "version": "1.0.0",
-  "description": "githuib game off",
-  "main": "index.html",
-  "repository": {
-    "url": "https://github.com/uurrnn/h4x0r.git",
-    "type": "git"
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.9"
   },
-  "author": "uurrnn <uurrnn@gmail.com>",
-  "license": "GPL",
   "dependencies": {
     "phaser": "^2.6.2"
   }
