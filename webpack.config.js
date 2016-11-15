@@ -41,12 +41,13 @@ module.exports = {
           "sass-loader",
         ]
       },
+      {
+        test: /pixi\.min\.js/,
+        use: [
+          "expose?PIXI",
+        ]
+      },
     ],
-    loaders: [
-     { test: /pixi\.js/, loader: 'expose?PIXI' },
-     { test: /phaser-split\.js$/, loader: 'expose?Phaser' },
-     { test: /p2\.js/, loader: 'expose?p2' }
-   ]
   },
   resolve: {
     alias: {
