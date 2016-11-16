@@ -4,10 +4,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 // Phaser webpack config
-const phaserModule = path.join(__dirname, '/node_modules/phaser/');
-const phaser = path.join(phaserModule, 'build/custom/phaser-split.min.js');
-const pixi = path.join(phaserModule, 'build/custom/pixi.min.js');
-const arcade = path.join(phaserModule, 'build/custom/phaser-arcade-physics.min.js');
+var phaserModule = path.join(__dirname, '/node_modules/phaser/')
+var phaser = path.join(phaserModule, 'build/custom/phaser-split.js')
+var pixi = path.join(phaserModule, 'build/custom/pixi.js')
+var p2 = path.join(phaserModule, 'build/custom/p2.js')
 
 
 module.exports = {
@@ -42,9 +42,21 @@ module.exports = {
         ]
       },
       {
-        test: /pixi\.min\.js/,
+        test: /pixi\.js/,
         use: [
-          "expose?PIXI",
+          "expose?PIXI"
+        ]
+      },
+      {
+        test: /p2\.js/,
+        use: [
+          "expose?p2"
+        ]
+      },
+      {
+        test: /phaser-split\.js/,
+        use: [
+          "expose?Phaser"
         ]
       },
     ],
@@ -53,7 +65,7 @@ module.exports = {
     alias: {
       'phaser': phaser,
       'pixi': pixi,
-      'arcade': arcade
+      'p2': p2
     }
   },
 };

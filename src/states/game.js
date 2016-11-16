@@ -26,8 +26,6 @@ export default class extends Phaser.State {
   }
 
   render () {
-    if (__DEV__) {
-      this.game.debug.spriteInfo(this.mushroom, 32, 32)
-    }
+
   }
 }

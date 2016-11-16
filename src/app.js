@@ -1,5 +1,5 @@
 import 'pixi';
-import 'arcade';
+import 'p2';
 import Phaser from 'phaser';
 
 import BootState from './states/boot';
@@ -9,8 +9,8 @@ import GameState from './states/game';
 class Game extends Phaser.Game {
 
   constructor () {
-    let width = document.documentElement.clientWidth > 768 ? 768 : document.documentElement.clientWidth
-    let height = document.documentElement.clientHeight > 1024 ? 1024 : document.documentElement.clientHeight
+    let width = 800
+    let height = 400
 
     super(width, height, Phaser.AUTO, 'game', null)
 
