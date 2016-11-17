@@ -10,7 +10,7 @@ class Game extends Phaser.Game {
 
   constructor () {
     let width = 800
-    let height = 400
+    let height = 450
 
     super(width, height, Phaser.AUTO, 'game', null)
 

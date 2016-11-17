@@ -1,0 +1,20 @@
+body {
+  background: #706565;
+  color: #ccddee;
+  text-align: center;
+  font-family: monospace;
+  text-shadow: 0 1px 1px #111;
+}
+a {
+  color: #aaddaa;
+}
+h1 {
+
+}
+.game {
+  margin: 0 auto;
+  border: 10px solid #ddeedd;
+  width: 800px;
+  box-shadow: 0 1px 1px #111;
+  border-radius: 3px;
+}

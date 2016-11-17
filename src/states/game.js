@@ -7,7 +7,7 @@ export default class extends Phaser.State {
   preload () {}
 
   create () {
-    let banner = this.add.text(this.game.world.centerX, this.game.height - 30, 'Phaser + ES6 + Webpack')
+    let banner = this.add.text(this.game.world.centerX, this.game.height - 30, 'Test + ES6 + Webpack')
     banner.font = 'Nunito'
     banner.fontSize = 40
     banner.fill = '#77BFA3'
